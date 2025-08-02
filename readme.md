@@ -1,5 +1,7 @@
 # Slovenian Car Statistics for year 2025 and 2024
 
+This application was written by Claude Code and dictated/supervised by me :)
+
 ## Build
 
 Execute:
@@ -37,3 +39,4 @@ An example to show statistics for April 2024, only for Toyota:
 ```shell
 carstats.exe -n toyota -y 2024 -m 4
 ```
+
