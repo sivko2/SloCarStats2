@@ -1,3 +1,19 @@
+// SloCarStats - Slovenian Car Statistics Analyzer
+// Copyright (C) 2025
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 package main
 
 import (
@@ -159,11 +175,11 @@ func main() {
 			displayValue = vehicle.CurrentYearCount
 		}
 		
-		fmt.Printf("%3d %-35s %5d\n", i, vehicle.Name, displayValue)
 		count++
+		fmt.Printf("#%03d %3d %-35s %5d\n", count, (i + 1), vehicle.Name, displayValue)
 		totalCurrentYear += displayValue
 	}
 	
-	fmt.Printf("%-39s %5d\n", "TOTAL", totalCurrentYear)
+	fmt.Printf("%-44s %5d\n", "TOTAL", totalCurrentYear)
 }
 
